@@ -8,7 +8,11 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
+<<<<<<< HEAD
 set VIRTUAL_ENV=C:\Users\55119\Documents\GitHub\gerenciador_senha
+=======
+set VIRTUAL_ENV=C:\Users\55119\Documents\GitHub\Biblioteca\venv
+>>>>>>> efc51aa7aee6ab61dbad3cdeefcee7d8227dcc6d
 
 if not defined PROMPT set PROMPT=$P$G
 
@@ -16,7 +20,11 @@ if defined _OLD_VIRTUAL_PROMPT set PROMPT=%_OLD_VIRTUAL_PROMPT%
 if defined _OLD_VIRTUAL_PYTHONHOME set PYTHONHOME=%_OLD_VIRTUAL_PYTHONHOME%
 
 set _OLD_VIRTUAL_PROMPT=%PROMPT%
+<<<<<<< HEAD
 set PROMPT=(gerenciador_senha) %PROMPT%
+=======
+set PROMPT=(venv) %PROMPT%
+>>>>>>> efc51aa7aee6ab61dbad3cdeefcee7d8227dcc6d
 
 if defined PYTHONHOME set _OLD_VIRTUAL_PYTHONHOME=%PYTHONHOME%
 set PYTHONHOME=

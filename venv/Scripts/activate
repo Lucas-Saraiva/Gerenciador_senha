@@ -18,7 +18,11 @@ deactivate () {
     # be called to get it to forget past commands.  Without forgetting
     # past commands the $PATH changes we made may not be respected
     if [ -n "${BASH:-}" -o -n "${ZSH_VERSION:-}" ] ; then
+<<<<<<< HEAD
         hash -r 2> /dev/null
+=======
+        hash -r
+>>>>>>> efc51aa7aee6ab61dbad3cdeefcee7d8227dcc6d
     fi
 
     if [ -n "${_OLD_VIRTUAL_PS1:-}" ] ; then
@@ -37,7 +41,11 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
+<<<<<<< HEAD
 VIRTUAL_ENV="C:\Users\55119\Documents\GitHub\gerenciador_senha"
+=======
+VIRTUAL_ENV="C:\Users\55119\Documents\GitHub\Biblioteca\venv"
+>>>>>>> efc51aa7aee6ab61dbad3cdeefcee7d8227dcc6d
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
@@ -54,7 +62,21 @@ fi
 
 if [ -z "${VIRTUAL_ENV_DISABLE_PROMPT:-}" ] ; then
     _OLD_VIRTUAL_PS1="${PS1:-}"
+<<<<<<< HEAD
     PS1="(gerenciador_senha) ${PS1:-}"
+=======
+    if [ "x(venv) " != x ] ; then
+	PS1="(venv) ${PS1:-}"
+    else
+    if [ "`basename \"$VIRTUAL_ENV\"`" = "__" ] ; then
+        # special case for Aspen magic directories
+        # see http://www.zetadev.com/software/aspen/
+        PS1="[`basename \`dirname \"$VIRTUAL_ENV\"\``] $PS1"
+    else
+        PS1="(`basename \"$VIRTUAL_ENV\"`)$PS1"
+    fi
+    fi
+>>>>>>> efc51aa7aee6ab61dbad3cdeefcee7d8227dcc6d
     export PS1
 fi
 
@@ -62,5 +84,9 @@ fi
 # be called to get it to forget past commands.  Without forgetting
 # past commands the $PATH changes we made may not be respected
 if [ -n "${BASH:-}" -o -n "${ZSH_VERSION:-}" ] ; then
+<<<<<<< HEAD
     hash -r 2> /dev/null
+=======
+    hash -r
+>>>>>>> efc51aa7aee6ab61dbad3cdeefcee7d8227dcc6d
 fi
